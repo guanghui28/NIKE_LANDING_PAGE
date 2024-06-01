@@ -12,13 +12,11 @@ export default function ShoeCard({ imgURL, changeBigShoeImage, bigShoeImg }) {
 			} cursor-pointer max-sm:flex-1`}
 			onClick={handleClick}
 		>
-			<div className="flex justify-center items-center bg-card bg-center bg-cover sm:w-40 sm:h-40 rounded-xl sm:p-4">
+			<div className="flex justify-center items-center bg-card bg-center bg-cover w-30 h-30 sm:w-40 sm:h-40 rounded-xl p-4 md:p-6">
 				<img
 					src={imgURL.thumbnail}
 					alt="shoe collection"
-					width={127}
-					height={103}
-					className="object-contain"
+					className="object-contain w-[100px] h-[81px] sm:w-[127px] sm:h-[103px]"
 				/>
 			</div>
 		</div>

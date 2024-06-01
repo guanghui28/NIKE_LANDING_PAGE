@@ -31,10 +31,12 @@ export default function Hero() {
 
 				<Button label="Shop now" iconURL={arrowRight} />
 
-				<div className="w-full mt-20 flex flex-wrap justify-start items-start gap-16">
+				<div className="w-full mt-20 flex flex-wrap justify-start items-start gap-8 md:gap-16">
 					{statistics.map((stat) => (
 						<div key={stat.label}>
-							<p className="font-palanquin text-4xl font-bold">{stat.value}</p>
+							<p className="font-palanquin text-3xl sm:text-4xl font-bold">
+								{stat.value}
+							</p>
 							<p className="font-montserrat text-slate-gray leading-7">
 								{stat.label}
 							</p>
@@ -52,7 +54,7 @@ export default function Hero() {
 					className="object-contain relative z-10"
 				/>
 
-				<div className="flex justify-center sm:gap-6 absolute -bottom-[5%] max-sm:px-6">
+				<div className="flex justify-center gap-4 sm:gap-6 absolute -bottom-[5%] max-sm:px-6">
 					{shoes.map((shoe, index) => (
 						<div key={index} className="">
 							<ShoeCard
