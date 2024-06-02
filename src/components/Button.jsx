@@ -1,6 +1,18 @@
-export default function Button({ label, iconURL }) {
+export default function Button({
+	label,
+	iconURL,
+	backgroundColor,
+	borderColor,
+	textColor,
+}) {
 	return (
-		<button className="flex justify-center items-center gap-2 px-7 py-4 font-montserrat border text-lg leading-none bg-coral-red rounded-full text-white border-coral-red  transition-all duration-300 hover:tracking-wider">
+		<button
+			className={`flex justify-center items-center gap-2 px-7 py-4 font-montserrat border text-lg leading-none rounded-full   transition-all duration-300 hover:tracking-wider ${
+				backgroundColor
+					? `${backgroundColor} ${borderColor} ${textColor}`
+					: "bg-coral-red text-white border-coral-red"
+			}`}
+		>
 			{label}{" "}
 			{iconURL && (
 				<img
