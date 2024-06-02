@@ -48,17 +48,17 @@ export default function Footer() {
 						</div>
 					))}
 				</div>
-				<div className="flex justify-between text-white-400 mt-24 max-sm:flex-col max-sm:items-center">
-					<div className="flex flex-1 justify-center items-center gap-2 font-montserrat cursor-pointer">
-						<img
-							src={copyrightSign}
-							alt="copyright"
-							className="w-[20px] aspect-auto rounded-full m-0"
-						/>
-						<p>Copyright. ALl rights reversed.</p>
-					</div>
-					<p className="font-montserrat cursor-pointer">Terms & conditions.</p>
+			</div>
+			<div className="flex justify-between text-white-400 mt-24 max-sm:flex-col max-sm:items-center">
+				<div className="flex justify-center items-center gap-2 font-montserrat cursor-pointer">
+					<img
+						src={copyrightSign}
+						alt="copyright"
+						className="w-[20px] aspect-auto rounded-full m-0"
+					/>
+					<p>Copyright. ALl rights reversed.</p>
 				</div>
+				<p className="font-montserrat cursor-pointer">Terms & conditions.</p>
 			</div>
 		</footer>
 	);
