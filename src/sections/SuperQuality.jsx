@@ -24,7 +24,7 @@ export default function SuperQuality() {
 					<Button label="View details"></Button>
 				</div>
 			</div>
-			<div className="flex flex-1 items-center justify-center">
+			<div className="flex items-center justify-center">
 				<img
 					src={shoe8}
 					alt="shoe"
