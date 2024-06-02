@@ -49,9 +49,7 @@ export default function Hero() {
 				<img
 					src={bigShoeImg}
 					alt="shoe collection"
-					width={610}
-					height={500}
-					className="object-contain relative z-10"
+					className="object-contain lg:w-[610px] w-[60%] aspect-auto relative z-10"
 				/>
 
 				<div className="flex justify-center gap-4 sm:gap-6 absolute -bottom-[5%] max-sm:px-6">

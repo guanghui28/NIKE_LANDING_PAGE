@@ -3,7 +3,7 @@ import { star } from "../assets/icons";
 export default function PopularProductCard({ imgURL, name, price }) {
 	return (
 		<div className="flex flex-col w-full">
-			<div className="flex justify-center items-center">
+			<div className="flex justify-center items-center hover:translate-y-[-5px] transition-transform duration-300 cursor-pointer ease-linear">
 				<img
 					src={imgURL}
 					alt={name}
